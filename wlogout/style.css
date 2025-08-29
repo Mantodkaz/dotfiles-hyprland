@@ -1,0 +1,123 @@
+/* ----------- (Wayland/GTK) -------- */
+/* wallust */
+@import '../../.config/waybar/wallust/colors-waybar.css';
+
+/* ===== Window / Overlay ===== */
+window {
+    background-color: rgba(18, 18, 24, 0.86);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+
+    color: @foreground;
+    font-size: 22pt;
+    padding: 24px 28px;
+}
+
+/* ===== button ===== */
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+
+    min-width: 100px;
+    min-height: 100px;
+    margin: 10px;
+
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 69px;
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.35),
+        inset 0 0 0 rgba(255, 255, 255, 0);
+
+    transition:
+        background-color 180ms ease,
+        background-size   160ms ease,
+        margin            160ms ease,
+        box-shadow        180ms ease,
+        border-color      180ms ease,
+        color             120ms ease;
+
+    -gtk-icon-shadow: 0 2px 10px rgba(0,0,0,0.35);
+}
+
+button:focus {
+    outline: none;
+    box-shadow:
+        0 2px 10px rgba(0,0,0,0.40),
+        0 0 0 2px rgba(255, 255, 255, 0.10),
+        0 0 0 4px alpha(@color13, 0.30);
+    border-color: alpha(@color13, 0.45);
+}
+
+/* === keyboard focus === */
+button:hover,
+button:focus,
+button:focus-visible {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+    background-size: 42%;
+    margin: 10px;
+    box-shadow:
+        0 6px 22px rgba(0,0,0,0.45),
+        0 0 0 2px rgba(255, 255, 255, 0.06);
+    color: @color13;
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.08);
+    background-size: 38%;
+    margin: 12px;
+    box-shadow:
+        0 3px 14px rgba(0,0,0,0.42),
+        inset 0 2px 10px rgba(0,0,0,0.35);
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Label */
+button span,
+button label {
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+    color: @foreground;
+    transition: color 120ms ease, opacity 160ms ease;
+    opacity: 0.92;
+}
+button:hover span, button:hover label,
+button:focus span, button:focus label,
+button:focus-visible span, button:focus-visible label {
+    color: @color13;
+    opacity: 1;
+}
+
+/* ===== Mapping icon ===== */
+#lock                 { background-image: image(url("./icons/lock.png")); }
+#lock:hover,
+#lock:focus,
+#lock:focus-visible   { background-image: image(url("./icons/lock-hover.png")); }
+
+#logout               { background-image: image(url("./icons/logout.png")); }
+#logout:hover,
+#logout:focus,
+#logout:focus-visible { background-image: image(url("./icons/logout-hover.png")); }
+
+#suspend              { background-image: image(url("./icons/sleep.png")); }
+#suspend:hover,
+#suspend:focus,
+#suspend:focus-visible{ background-image: image(url("./icons/sleep-hover.png")); }
+
+#shutdown             { background-image: image(url("./icons/power.png")); }
+#shutdown:hover,
+#shutdown:focus,
+#shutdown:focus-visible { background-image: image(url("./icons/power-hover.png")); }
+
+#reboot               { background-image: image(url("./icons/restart.png")); }
+#reboot:hover,
+#reboot:focus,
+#reboot:focus-visible { background-image: image(url("./icons/restart-hover.png")); }
+
+#hibernate            { background-image: image(url("./icons/hibernate.png")); }
+#hibernate:hover,
+#hibernate:focus,
+#hibernate:focus-visible { background-image: image(url("./icons/hibernate-hover.png")); }
