@@ -20,7 +20,7 @@
 
 "modules-left": [
 	"custom/cava_mviz",
-	//"custom/separator#dot-line",
+	"idle_inhibitor",
 	"hyprland/workspaces#rw",
 	"hyprland/window",
 	],
@@ -28,12 +28,11 @@
 "modules-center": [
 	"group/app_drawer",
 	"custom/separator#blank",
-	"group/notify",
 	"custom/separator#dot-line",
 	"clock",
 	"custom/separator#dot-line",
-	"idle_inhibitor",	
-	//"custom/hint",	
+	"group/notify"
+	// "custom/hint",
 	],
 
 "modules-right": [
