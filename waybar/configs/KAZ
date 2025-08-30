@@ -33,7 +33,7 @@
 	"clock",
 	"custom/separator#dot-line",
 	"idle_inhibitor",	
-	"custom/hint",	
+	//"custom/hint",	
 	],
 
 "modules-right": [
