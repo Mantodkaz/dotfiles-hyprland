@@ -4,10 +4,9 @@
   "$HOME/.config/waybar/ModulesWorkspaces",
   "$HOME/.config/waybar/ModulesCustom",
   "$HOME/.config/waybar/ModulesGroups",
-  "$HOME/.config/waybar/UserModules",
+  "$HOME/.config/waybar/UserModules"
   ],
 "layer": "top",
-//"mode": "dock",
 "exclusive": true,
 "passthrough": false,
 "position": "top",
@@ -22,7 +21,7 @@
 	"custom/cava_mviz",
 	"idle_inhibitor",
 	"hyprland/workspaces#rw",
-	"hyprland/window",
+	"hyprland/window"
 	],
 
 "modules-center": [
@@ -32,7 +31,6 @@
 	"clock",
 	"custom/separator#dot-line",
 	"group/notify"
-	// "custom/hint",
 	],
 
 "modules-right": [
@@ -45,6 +43,6 @@
 	"custom/separator#line",  
 	"group/audio",
 	"custom/separator#dot-line", 
-	"group/status",
-	],
+	"group/status"
+	]
 }
